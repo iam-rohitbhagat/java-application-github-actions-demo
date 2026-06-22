@@ -34,8 +34,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   test:
-    - name: testing java application
-      run: echo testing passed
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing java application
+        run: echo testing passed
   deploy:
-    - name: deploying application on hosted server
-      run: echo application deplohyed!!!!
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying application on hosted server
+        run: echo application deplohyed!!!!
